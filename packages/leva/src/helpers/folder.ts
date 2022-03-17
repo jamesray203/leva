@@ -1,7 +1,7 @@
 import { SpecialInputs } from '../types'
 import type { FolderInput, Schema, SchemaToValues, FolderSettings } from '../types'
 
-const defaultSettings = { collapsed: false }
+const defaultSettings = { collapsed: true }
 
 export function folder<S extends Schema>(schema: S, settings?: FolderSettings): FolderInput<SchemaToValues<S>> {
   return {
